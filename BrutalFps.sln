@@ -1,0 +1,83 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.10.12224.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrutalFps", "BrutalFps.csproj", "{D3798EEB-1294-4439-B5AF-88CE340F25BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Editor", "Editor", "{28251423-8E50-9DF4-F913-DC1FAAA673F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrutalFpsEditor", "Editor\BrutalFpsEditor.csproj", "{AC941BE7-B0AB-4EA5-A9EC-25B028252946}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		StressTest|Any CPU = StressTest|Any CPU
+		StressTest|x64 = StressTest|x64
+		StressTest|x86 = StressTest|x86
+		NpcTest|Any CPU = NpcTest|Any CPU
+		NpcTest|x64 = NpcTest|x64
+		NpcTest|x86 = NpcTest|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.Debug|x64.Build.0 = Debug|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.Debug|x86.Build.0 = Debug|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.Release|x64.ActiveCfg = Release|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.Release|x64.Build.0 = Release|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.Release|x86.ActiveCfg = Release|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.Release|x86.Build.0 = Release|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.StressTest|Any CPU.ActiveCfg = StressTest|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.StressTest|Any CPU.Build.0 = StressTest|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.StressTest|x64.ActiveCfg = StressTest|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.StressTest|x64.Build.0 = StressTest|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.StressTest|x86.ActiveCfg = StressTest|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.StressTest|x86.Build.0 = StressTest|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.NpcTest|Any CPU.ActiveCfg = NpcTest|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.NpcTest|Any CPU.Build.0 = NpcTest|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.NpcTest|x64.ActiveCfg = NpcTest|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.NpcTest|x64.Build.0 = NpcTest|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.NpcTest|x86.ActiveCfg = NpcTest|Any CPU
+		{D3798EEB-1294-4439-B5AF-88CE340F25BF}.NpcTest|x86.Build.0 = NpcTest|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.Debug|x64.Build.0 = Debug|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.Debug|x86.Build.0 = Debug|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.Release|x64.ActiveCfg = Release|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.Release|x64.Build.0 = Release|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.Release|x86.ActiveCfg = Release|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.Release|x86.Build.0 = Release|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.StressTest|Any CPU.ActiveCfg = StressTest|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.StressTest|Any CPU.Build.0 = StressTest|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.StressTest|x64.ActiveCfg = StressTest|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.StressTest|x64.Build.0 = StressTest|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.StressTest|x86.ActiveCfg = StressTest|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.StressTest|x86.Build.0 = StressTest|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.NpcTest|Any CPU.ActiveCfg = NpcTest|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.NpcTest|Any CPU.Build.0 = NpcTest|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.NpcTest|x64.ActiveCfg = NpcTest|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.NpcTest|x64.Build.0 = NpcTest|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.NpcTest|x86.ActiveCfg = NpcTest|Any CPU
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946}.NpcTest|x86.Build.0 = NpcTest|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AC941BE7-B0AB-4EA5-A9EC-25B028252946} = {28251423-8E50-9DF4-F913-DC1FAAA673F1}
+	EndGlobalSection
+EndGlobal

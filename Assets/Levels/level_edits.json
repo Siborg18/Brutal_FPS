@@ -1,0 +1,1404 @@
+{
+  "version": 1,
+  "worlds": {
+    "full": {
+      "moved": [
+        {
+          "id": "B|520.00,2.59,11.64|0.68,5.18,0.24|0",
+          "yaw": 0,
+          "x": 7.5,
+          "y": 0,
+          "z": 0,
+          "deleted": false
+        },
+        {
+          "id": "B|532.19,2.59,11.64|0.68,5.18,0.24|0",
+          "yaw": 0,
+          "x": 17,
+          "y": 0,
+          "z": 0,
+          "deleted": false
+        },
+        {
+          "id": "B|541.50,2.59,-11.64|0.68,5.18,0.24|0",
+          "yaw": 0,
+          "x": 7.75,
+          "y": 0,
+          "z": 0,
+          "deleted": false
+        },
+        {
+          "id": "B|536.50,1.29,1.00|2.44,2.59,6.05|0",
+          "yaw": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "deleted": true
+        },
+        {
+          "id": "B|4999.48,4.90,0.00|0.05,2.60,1.10|4",
+          "yaw": 0,
+          "x": 0.5,
+          "y": -0.25,
+          "z": 0,
+          "deleted": true
+        },
+        {
+          "id": "B|5000.52,4.90,0.00|0.05,2.60,1.10|4",
+          "yaw": 0,
+          "x": -0.25,
+          "y": 0,
+          "z": 0,
+          "deleted": true
+        },
+        {
+          "id": "B|5000.00,4.90,-0.52|1.00,2.60,0.05|4",
+          "yaw": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "deleted": true
+        },
+        {
+          "id": "B|5000.00,4.90,0.52|1.00,2.60,0.05|4",
+          "yaw": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "deleted": true
+        },
+        {
+          "id": "B|-10.70,-999.70,-6.70|0.26,0.60,0.56|0",
+          "yaw": 0,
+          "x": -0.25,
+          "y": 0,
+          "z": 0,
+          "deleted": true
+        },
+        {
+          "id": "B|-10.10,-999.70,-0.55|0.60,0.60,0.60|0",
+          "yaw": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "deleted": true
+        },
+        {
+          "id": "P|mesh|520.00,3.09,11.64|0.66,6.18,0.24",
+          "yaw": 0,
+          "x": 7.5,
+          "y": 0,
+          "z": 0,
+          "deleted": false
+        },
+        {
+          "id": "P|mesh|532.19,3.09,11.64|0.66,6.18,0.24",
+          "yaw": 0,
+          "x": 17,
+          "y": 0,
+          "z": 0,
+          "deleted": false
+        },
+        {
+          "id": "P|mesh|541.50,3.09,-11.64|0.66,6.18,0.24",
+          "yaw": 0,
+          "x": 7.75,
+          "y": 0,
+          "z": 0,
+          "deleted": false
+        },
+        {
+          "id": "P|container_20|536.50,1.30,0.97|2.45,2.59,6.12",
+          "yaw": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "deleted": true
+        },
+        {
+          "id": "P|crate|-10.10,-999.70,-0.55|0.61,0.60,0.61",
+          "yaw": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "deleted": true
+        },
+        {
+          "id": "P|mesh|11.00,-997.22,-1.50|0.12,0.04,0.12",
+          "yaw": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "deleted": true
+        },
+        {
+          "id": "P|mesh|11.03,-997.24,-1.50|0.01,0.00,0.01",
+          "yaw": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "deleted": true
+        },
+        {
+          "id": "P|mesh|9.33,-997.40,-6.75|0.21,0.35,0.34",
+          "yaw": 0,
+          "x": 0.75,
+          "y": 0,
+          "z": 1,
+          "deleted": true
+        },
+        {
+          "id": "P|mesh|-10.70,-999.70,-6.70|0.25,0.60,0.55",
+          "yaw": 0,
+          "x": -0.25,
+          "y": 0,
+          "z": 0,
+          "deleted": true
+        },
+        {
+          "id": "P|mesh|-9.29,-999.06,-0.28|0.05,0.44,0.16",
+          "yaw": 0,
+          "x": 0,
+          "y": 0,
+          "z": -2.25,
+          "deleted": false
+        },
+        {
+          "id": "P|mesh|-9.30,-999.18,-0.30|0.15,0.55,0.15",
+          "yaw": 0,
+          "x": 0,
+          "y": 0,
+          "z": -2.25,
+          "deleted": false
+        },
+        {
+          "id": "P|mesh|-9.23,-999.20,-0.30|0.00,0.14,0.10",
+          "yaw": 0,
+          "x": 0,
+          "y": 0,
+          "z": -2.25,
+          "deleted": false
+        },
+        {
+          "id": "P|mesh|-10.70,-999.50,-6.42|0.04,0.02,0.00",
+          "yaw": 0,
+          "x": -0.25,
+          "y": 0,
+          "z": 0,
+          "deleted": true
+        },
+        {
+          "id": "P|mesh|-12.00,-997.51,-6.89|4.00,0.03,0.13",
+          "yaw": 0,
+          "x": -0.25,
+          "y": 0,
+          "z": 0,
+          "deleted": true
+        },
+        {
+          "id": "P|mesh|-12.00,-997.51,-6.91|4.00,0.03,0.02",
+          "yaw": 0,
+          "x": -0.25,
+          "y": 0,
+          "z": 0,
+          "deleted": true
+        },
+        {
+          "id": "P|mesh|-12.00,-997.51,-6.87|4.00,0.03,0.02",
+          "yaw": 0,
+          "x": -0.25,
+          "y": 0,
+          "z": 0,
+          "deleted": true
+        },
+        {
+          "id": "P|mesh|-12.00,-997.55,-6.88|4.00,0.06,0.20",
+          "yaw": 0,
+          "x": -0.25,
+          "y": 0,
+          "z": 0,
+          "deleted": true
+        }
+      ],
+      "added": [
+        {
+          "kind": "box",
+          "min": [
+            11.21,
+            -1000,
+            -6.64
+          ],
+          "max": [
+            11.79,
+            -999.12,
+            -6.06
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": true,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "model",
+          "model": "drum",
+          "color": [
+            0.85,
+            0.62,
+            0.1
+          ],
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            0.9553365,
+            0,
+            -0.29552022,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0.29552022,
+            0,
+            0.9553365,
+            0,
+            11.5,
+            -1000,
+            -6.35,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "copy",
+          "copyOf": "P|mesh|10.00,-998.26,-6.99|0.47,0.19,0.00",
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1.5,
+            0,
+            0,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 11767
+        },
+        {
+          "kind": "copy",
+          "copyOf": "P|mesh|10.00,-998.25,-6.99|0.90,0.30,0.01",
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1.5,
+            0,
+            0,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 11767
+        },
+        {
+          "kind": "copy",
+          "copyOf": "P|mesh|10.12,-999.09,-6.22|0.35,0.40,0.35",
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1.5,
+            0,
+            0,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 11767
+        },
+        {
+          "kind": "copy",
+          "copyOf": "P|mesh|9.91,-1000.00,-5.75|0.84,0.00,0.08",
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1.5,
+            0,
+            0,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 11768
+        },
+        {
+          "kind": "copy",
+          "copyOf": "P|mesh|10.03,-1000.00,-5.75|0.84,0.00,0.08",
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1.5,
+            0,
+            0,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 11768
+        },
+        {
+          "kind": "box",
+          "min": [
+            -9.809999,
+            -1000,
+            -0.8000002
+          ],
+          "max": [
+            -9.189999,
+            -998,
+            0.19999981
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": true,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "copy",
+          "copyOf": "P|mesh|-9.86,-999.03,-5.94|0.13,1.61,0.00",
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -1,
+            0,
+            8.742278E-08,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -8.742278E-08,
+            0,
+            -1,
+            0,
+            -19.5,
+            0,
+            -6.749999,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 11769
+        },
+        {
+          "kind": "copy",
+          "copyOf": "P|mesh|-10.00,-999.00,-6.45|0.62,2.00,1.00",
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -1,
+            0,
+            8.742278E-08,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -8.742278E-08,
+            0,
+            -1,
+            0,
+            -19.5,
+            0,
+            -6.749999,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 11769
+        },
+        {
+          "kind": "copy",
+          "copyOf": "P|mesh|-10.00,-999.02,-5.94|0.48,1.66,0.01",
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -1,
+            0,
+            8.742278E-08,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -8.742278E-08,
+            0,
+            -1,
+            0,
+            -19.5,
+            0,
+            -6.749999,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 11769
+        },
+        {
+          "kind": "copy",
+          "copyOf": "P|mesh|-9.86,-999.06,-5.94|0.13,1.54,0.00",
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -1,
+            0,
+            8.742278E-08,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -8.742278E-08,
+            0,
+            -1,
+            0,
+            -19.5,
+            0,
+            -6.749999,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 11769
+        },
+        {
+          "kind": "box",
+          "min": [
+            -10.559999,
+            -1000,
+            -0.8000002
+          ],
+          "max": [
+            -9.939999,
+            -998,
+            0.19999981
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": true,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "copy",
+          "copyOf": "P|mesh|-9.86,-999.03,-5.94|0.13,1.61,0.00",
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -1,
+            0,
+            8.742278E-08,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -8.742278E-08,
+            0,
+            -1,
+            0,
+            -20.25,
+            0,
+            -6.749999,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 11770
+        },
+        {
+          "kind": "copy",
+          "copyOf": "P|mesh|-10.00,-999.00,-6.45|0.62,2.00,1.00",
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -1,
+            0,
+            8.742278E-08,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -8.742278E-08,
+            0,
+            -1,
+            0,
+            -20.25,
+            0,
+            -6.749999,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 11770
+        },
+        {
+          "kind": "copy",
+          "copyOf": "P|mesh|-10.00,-999.02,-5.94|0.48,1.66,0.01",
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -1,
+            0,
+            8.742278E-08,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -8.742278E-08,
+            0,
+            -1,
+            0,
+            -20.25,
+            0,
+            -6.749999,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 11770
+        },
+        {
+          "kind": "copy",
+          "copyOf": "P|mesh|-9.86,-999.06,-5.94|0.13,1.54,0.00",
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -1,
+            0,
+            8.742278E-08,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -8.742278E-08,
+            0,
+            -1,
+            0,
+            -20.25,
+            0,
+            -6.749999,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 11770
+        },
+        {
+          "kind": "box",
+          "min": [
+            529.91,
+            0,
+            -11.76
+          ],
+          "max": [
+            530.59,
+            5.18,
+            -11.52
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": false,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "copy",
+          "copyOf": "P|mesh|541.50,3.09,-11.64|0.66,6.18,0.24",
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -11.25,
+            0,
+            0,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "model",
+          "model": "crate",
+          "color": [
+            0.46,
+            0.34,
+            0.22
+          ],
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -4.371139E-08,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            -4.371139E-08,
+            0,
+            493.75,
+            0,
+            22.25,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "box",
+          "min": [
+            493.32077,
+            0,
+            21.820759
+          ],
+          "max": [
+            494.17923,
+            1,
+            22.679241
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": true,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "box",
+          "min": [
+            494.57077,
+            0,
+            21.820759
+          ],
+          "max": [
+            495.42923,
+            1,
+            22.679241
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": true,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "model",
+          "model": "crate",
+          "color": [
+            0.46,
+            0.34,
+            0.22
+          ],
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -4.371139E-08,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            -4.371139E-08,
+            0,
+            495,
+            0,
+            22.25,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "box",
+          "min": [
+            492.07077,
+            0,
+            21.820759
+          ],
+          "max": [
+            492.92923,
+            1,
+            22.679241
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": true,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "model",
+          "model": "crate",
+          "color": [
+            0.46,
+            0.34,
+            0.22
+          ],
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -4.371139E-08,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            -4.371139E-08,
+            0,
+            492.5,
+            0,
+            22.25,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "model",
+          "model": "transit",
+          "color": [
+            0.9,
+            0.9,
+            0.9
+          ],
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -4.371139E-08,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            -4.371139E-08,
+            0,
+            535.247,
+            0.0009997487,
+            0.5,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 11771
+        },
+        {
+          "kind": "model",
+          "model": "transit_plate_nl2",
+          "color": [
+            0.9,
+            0.9,
+            0.9
+          ],
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -4.371139E-08,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            -4.371139E-08,
+            0,
+            535.247,
+            0.0009997487,
+            0.5,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 11771
+        },
+        {
+          "kind": "box",
+          "min": [
+            532.4568,
+            -2.3841858E-07,
+            -0.58065367
+          ],
+          "max": [
+            538.0432,
+            2.1999998,
+            1.5806537
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": true,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        }
+      ]
+    },
+    "raid": {
+      "moved": [
+        {
+          "id": "B|21.00,4.45,-55.75|0.50,8.90,0.50|1",
+          "yaw": 0,
+          "x": -1,
+          "y": 0,
+          "z": 0,
+          "deleted": false
+        }
+      ],
+      "added": [
+        {
+          "kind": "model",
+          "model": "transit",
+          "color": [
+            0.9,
+            0.9,
+            0.9
+          ],
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -4.371139E-08,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            -4.371139E-08,
+            0,
+            9.497,
+            0.015999973,
+            -46.25,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 3296
+        },
+        {
+          "kind": "model",
+          "model": "transit_plate_nl2",
+          "color": [
+            0.9,
+            0.9,
+            0.9
+          ],
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -4.371139E-08,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            -4.371139E-08,
+            0,
+            9.497,
+            0.015999973,
+            -46.25,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 3296
+        },
+        {
+          "kind": "box",
+          "min": [
+            6.706838,
+            0.014999986,
+            -47.330654
+          ],
+          "max": [
+            12.293161,
+            2.2150002,
+            -45.169346
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": true,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "box",
+          "min": [
+            -29.30387,
+            0,
+            -45.976086
+          ],
+          "max": [
+            -28.18894,
+            2.76,
+            -43.873043
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": true,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "box",
+          "min": [
+            -28.331244,
+            0,
+            -45.908073
+          ],
+          "max": [
+            -27.216314,
+            2.76,
+            -43.80503
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": true,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "box",
+          "min": [
+            -27.358618,
+            0,
+            -45.84006
+          ],
+          "max": [
+            -26.243689,
+            2.76,
+            -43.73702
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": true,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "box",
+          "min": [
+            -26.385994,
+            0,
+            -45.77205
+          ],
+          "max": [
+            -25.271065,
+            2.76,
+            -43.669006
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": true,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "box",
+          "min": [
+            -25.413368,
+            0,
+            -45.704037
+          ],
+          "max": [
+            -24.782257,
+            2.3,
+            -43.634823
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": true,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "box",
+          "min": [
+            -24.92456,
+            0,
+            -45.669857
+          ],
+          "max": [
+            -24.283478,
+            1.8,
+            -43.59995
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": true,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "box",
+          "min": [
+            -24.42578,
+            0,
+            -45.63498
+          ],
+          "max": [
+            -23.19613,
+            1.35,
+            -43.52391
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": true,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "model",
+          "model": "transit",
+          "color": [
+            0.86,
+            0.87,
+            0.86
+          ],
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -0.0697566,
+            0,
+            0.997564,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -0.997564,
+            0,
+            -0.0697566,
+            0,
+            -26.25,
+            0,
+            -44.75,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 3297
+        },
+        {
+          "kind": "model",
+          "model": "transit_plate_nl1",
+          "color": [
+            0.86,
+            0.87,
+            0.86
+          ],
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -0.0697566,
+            0,
+            0.997564,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -0.997564,
+            0,
+            -0.0697566,
+            0,
+            -26.25,
+            0,
+            -44.75,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 3297
+        },
+        {
+          "kind": "model",
+          "model": "crate",
+          "color": [
+            0.46,
+            0.34,
+            0.22
+          ],
+          "material": 0,
+          "visible": true,
+          "blocksShots": true,
+          "collides": true,
+          "matrix": [
+            -1,
+            0,
+            -8.742278E-08,
+            0,
+            0,
+            1,
+            0,
+            0,
+            8.742278E-08,
+            0,
+            -1,
+            0,
+            -21.75,
+            0.015000343,
+            -34.75,
+            1
+          ],
+          "paintFaces": 0,
+          "piece": 0
+        },
+        {
+          "kind": "box",
+          "min": [
+            -22.17924,
+            0.015000343,
+            -35.179237
+          ],
+          "max": [
+            -21.32076,
+            1.0150003,
+            -34.320763
+          ],
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "material": 0,
+          "visible": false,
+          "blocksShots": true,
+          "collides": true,
+          "paintFaces": 0,
+          "piece": 0
+        }
+      ]
+    }
+  }
+}

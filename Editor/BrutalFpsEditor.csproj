@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- The level editor, built on its own as BrutalFpsEditor.exe: the game's source (Program.cs, Engine, Game) with
+       LEVEL_EDITOR defined, so it opens straight into the editor (Game/LevelEditor.cs). SAVE CHANGES writes
+       Assets/Levels/level_edits.json in the project folder, which the game (BrutalFps.csproj) loads as each level is
+       built, and copies next to its exe when it's built. -->
+  <Import Project="..\BrutalFps.props" />
+
+  <PropertyGroup>
+    <AssemblyName>BrutalFpsEditor</AssemblyName>
+    <DefineConstants>$(DefineConstants);LEVEL_EDITOR</DefineConstants>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Program.cs" Link="Program.cs" />
+    <Compile Include="..\Engine\**\*.cs" LinkBase="Engine\" />
+    <Compile Include="..\Game\**\*.cs" LinkBase="Game\" />
+  </ItemGroup>
+
+</Project>

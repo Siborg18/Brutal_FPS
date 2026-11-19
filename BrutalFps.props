@@ -1,0 +1,79 @@
+<Project>
+
+  <!-- What the game (BrutalFps.csproj) and the level editor (Editor/BrutalFpsEditor.csproj) share: the settings, the
+       packages and the assets copied next to the exe. Both build the same source; the editor's adds LEVEL_EDITOR. -->
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>BrutalFps</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <!-- BRUTAL ships native binaries for these runtimes only. -->
+    <RuntimeIdentifiers>win-x64;linux-x64</RuntimeIdentifiers>
+    <!-- Always run as a 64-bit process: BRUTAL's native libraries are x64 only. -->
+    <PlatformTarget>x64</PlatformTarget>
+    <!-- Startup: no profiling instrumentation while everything runs for the first time (about 0.3 s less loading; the frame rate is the same). -->
+    <TieredPGO>false</TieredPGO>
+  </PropertyGroup>
+
+  <!-- StressTest: a Release build with STRESS_TEST defined (Game/NpcsStressTest.cs): stepping into Rio spawns 100 armed
+       NPCs, who all open fire together a second later; the player takes no harm. Build it with: dotnet build -c StressTest -->
+  <PropertyGroup>
+    <Configurations>Debug;Release;StressTest;NpcTest</Configurations>
+  </PropertyGroup>
+  <!-- NpcTest: a Debug build with NPC_TEST defined (Game/NpcsTestArea.cs): you start outside the factory's outbuilding with
+       one of each kind of NPC inside it, nobody else in the world, and nobody can die; Esc > NPC CONFIG sets them up.
+       Build it with: dotnet build -c NpcTest (or BRUTALFPS_NPCTEST=1 in any build: the "NPC testing" launch profile). -->
+  <PropertyGroup Condition="'$(Configuration)' == 'NpcTest'">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <DefineConstants>$(DefineConstants);TRACE;DEBUG;NPC_TEST</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'StressTest'">
+    <Optimize>true</Optimize>
+    <DebugType>portable</DebugType>
+    <DefineConstants>$(DefineConstants);TRACE;STRESS_TEST</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Window, input and the OpenGL context. -->
+    <PackageReference Include="Ahwoo.BRUTAL.Glfw" Version="2026.10.4" />
+    <!-- OpenGL bindings (GLAD loader + typed wrappers). -->
+    <PackageReference Include="Ahwoo.BRUTAL.OpenGl" Version="2026.10.1" />
+    <!-- float3 / float4x4 maths. -->
+    <PackageReference Include="Ahwoo.BRUTAL.Numerics" Version="2026.10.2" />
+    <!-- stb_image: PNG textures and HDR sky faces. -->
+    <PackageReference Include="Ahwoo.BRUTAL.Stb" Version="2026.10.2" />
+    <!-- glTF loading: the models exported from Blender (.glb). -->
+    <PackageReference Include="Ahwoo.BRUTAL.Gltf" Version="2026.10.2" />
+    <!-- meshoptimizer: levels of detail for the skinned characters (simplified index lists, built at load time). -->
+    <PackageReference Include="Ahwoo.BRUTAL.MeshOptimizer" Version="2026.10.1" />
+    <!-- Physics: Bullet (bullet3, https://github.com/bulletphysics/bullet3) through the BulletSharp wrapper. BRUTAL's own
+         physics package is Jolt, not Bullet. This package ships Bullet's native library for Windows x64 (libbulletc.dll,
+         double precision); elsewhere the game runs without physics. -->
+    <PackageReference Include="BulletSharp.x64" Version="0.12.0" />
+    <!-- Audio: OpenAL Soft (3D positional sound), with its native libraries for Windows, Linux and macOS. -->
+    <PackageReference Include="Ahwoo.BRUTAL.OpenAl" Version="2026.10.3" />
+  </ItemGroup>
+
+  <!-- Game assets, copied next to the executable. (The .blend sources, Tools and preview renders stay out.) The paths are
+       from this file's folder, and each keeps its place under Assets wherever the project building it is. -->
+  <PropertyGroup>
+    <BrutalAssets>$(MSBuildThisFileDirectory)Assets\</BrutalAssets>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(BrutalAssets)*.obj" LinkBase="Assets\" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(BrutalAssets)Models\**\*.glb;$(BrutalAssets)Models\**\*.json" LinkBase="Assets\Models\" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(BrutalAssets)Textures\*.png" LinkBase="Assets\Textures\" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(BrutalAssets)Sky\*.hdr;$(BrutalAssets)Sky\*.json" LinkBase="Assets\Sky\" CopyToOutputDirectory="PreserveNewest" />
+    <!-- The layout saved from the level editor (Game/LevelEditing.cs). Run from a build in the project, the game and the
+         editor both read the project's copy (the editor writes it); a copy away from the project reads this one. -->
+    <None Include="$(BrutalAssets)Levels\*.json" LinkBase="Assets\Levels\" CopyToOutputDirectory="PreserveNewest" />
+    <!-- Game sounds: the clips in the subfolders (Weapons, ...). The recordings at the top of Assets\Sounds are sources and stay out. -->
+    <None Include="$(BrutalAssets)Sounds\*\**\*.wav" LinkBase="Assets\Sounds\" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

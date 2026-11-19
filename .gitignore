@@ -1,0 +1,14 @@
+bin/
+obj/
+.vs/
+*.user
+
+# Large / generated content kept out of the repo
+Backup_*/
+Backup_*.zip
+*.blend1
+__pycache__/
+*.pyc
+Tools/previews/
+Logs/
+TextureCache/

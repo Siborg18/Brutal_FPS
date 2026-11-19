@@ -1,0 +1,22 @@
+{
+  "profiles": {
+    "BrutalFpsEditor": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)"
+    },
+    "Editor: firing range": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)",
+      "environmentVariables": {
+        "BRUTALFPS_START": "range"
+      }
+    },
+    "Editor: factory raid": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)",
+      "environmentVariables": {
+        "BRUTALFPS_START": "raid"
+      }
+    }
+  }
+}

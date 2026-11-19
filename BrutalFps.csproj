@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- The game. Its settings, packages and assets are in BrutalFps.props, shared with the level editor's build
+       (Editor/BrutalFpsEditor.csproj): the game itself has no editor in it, but loads what the editor saves
+       (Assets/Levels/level_edits.json). -->
+  <Import Project="BrutalFps.props" />
+
+  <PropertyGroup>
+    <AssemblyName>BrutalFps</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Backup folders (Backup_before_reverb, ...) hold old copies of source files: don't compile them. -->
+    <Compile Remove="Backup*/**" />
+    <None Remove="Backup*/**" />
+    <!-- The level editor's own build (its project, bin and obj), and the editor itself: only that build has it. -->
+    <Compile Remove="Editor/**" />
+    <None Remove="Editor/**" />
+    <Compile Remove="Game/LevelEditor.cs;Game/LevelEditorPaint.cs" />
+  </ItemGroup>
+
+</Project>

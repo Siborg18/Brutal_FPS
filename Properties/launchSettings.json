@@ -1,0 +1,66 @@
+{
+  "profiles": {
+    "BrutalFps": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)"
+    },
+    "Infinite flashbangs, grenades and smoke": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)",
+      "environmentVariables": {
+        "BRUTALFPS_FLASHBANGS": "infinite",
+        "BRUTALFPS_GRENADES": "infinite"
+      }
+    },
+    "Passive NPCs": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)",
+      "environmentVariables": {
+        "BRUTALFPS_NPCS": "passive"
+      }
+    },
+    "Firing range": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)",
+      "environmentVariables": {
+        "BRUTALFPS_START": "range"
+      }
+    },
+    "Prison intro": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)",
+      "environmentVariables": {
+        "BRUTALFPS_START": "intro"
+      }
+    },
+    "Factory raid": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)",
+      "environmentVariables": {
+        "BRUTALFPS_START": "raid"
+      }
+    },
+    "Antwerp raid": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)",
+      "environmentVariables": {
+        "BRUTALFPS_START": "antwerp"
+      }
+    },
+    "NPC testing": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)",
+      "environmentVariables": {
+        "BRUTALFPS_NPCTEST": "1"
+      }
+    },
+    "Stress test (Rio)": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)",
+      "environmentVariables": {
+        "BRUTALFPS_STRESS": "1",
+        "BRUTALFPS_START": "arcticcontainer"
+      }
+    }
+  }
+}
