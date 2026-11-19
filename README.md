@@ -1381,4 +1381,5 @@ covered by this project's licence.
 
 Physics is [Bullet](https://github.com/bulletphysics/bullet3) (zlib licence) through BulletSharp.
 
-This project's own code is released under the MIT licence: see [LICENSE](LICENSE).
+This project's own code is released under the MIT licence: see [LICENSE](LICENSE). That licence doesn't cover BRUTAL itself
+(the `Ahwoo.BRUTAL.*` NuGet packages, under the BRUTAL License v1.0) or the BRUTAL logo files.
