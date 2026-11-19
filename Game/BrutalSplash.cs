@@ -1,5 +1,6 @@
 using Brutal.GlfwApi;
 using Brutal.Numerics;
+using Brutal.OpenGlApi;
 using BrutalFps.Engine;
 using static Brutal.OpenGlApi.OpenGl;
 
