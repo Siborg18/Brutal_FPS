@@ -1,3 +1,14 @@
+<p align="center">
+  <a href="https://www.ahwoo.com/brutal">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="Assets/Branding/LOGO_BRUTAL_WHT.png">
+      <img src="Assets/Branding/LOGO_BRUTAL_BLK.png" alt="Built with BRUTAL" width="420">
+    </picture>
+  </a>
+</p>
+
+<p align="center"><b>Built with BRUTAL</b>, a game development framework by Ahwoo Limited.</p>
+
 # BRUTAL FPS
 
 A small first-person shooter prototype built on the [BRUTAL framework](https://github.com/ahwootech/BRUTAL).
@@ -1354,3 +1365,20 @@ The sources as they were are in `Backup_before_factory_west_door.zip`.
 - **The outbuildings reinforce the hall.** Once the hall is attacked (anyone in the hall or office, or either door guard, hit or killed, or fighting the player in the hall or within 12 m of it), everyone still standing in each outbuilding leaves it and pushes into the hall by the door nearest them: the outbuilding's crew by the side door, the second hall's up the outside steps and in by the rear door, the boiler house's by the big sliding door (`[FACTORY] The hall's under attack (...)` in the log). They run there by the usual paths, fight whoever they see on the way, and once through go after the player; afterwards they stay in the hall. Clear an outbuilding first and nobody comes from it. It happens once each life.
 - **Orders** (`ArmedNpc.OrderGoTo`, `Game/ArmedNpcOrders.cs`): a script can send an armed NPC somewhere, on the alert and at a run, to hold it as a post or to go after the player from there; while they're on their way it comes before searching, shots heard and cover.
 - **Tested** (`BRUTALFPS_MUTE=1 BRUTALFPS_GOD=1 BRUTALFPS_TIME=day BRUTALFPS_START="-5,0,12,180" BRUTALFPS_SCRIPT="3::0;0.3:F:0;0.3:F:0;0.3:F:0;45::0"`): all 23 from the outbuildings set off, and the side, rear and big doors are opened by them; with `BRUTALFPS_KILLAT="18:factory door guard 1"`, guard 2 is back holding the door 4 s later. A factory raid over the fence starts as before.
+
+## Credits and licences
+
+**BRUTAL game development framework is Copyright (c) 2024 Ahwoo Limited.**
+This game is built with [BRUTAL](https://github.com/ahwootech/BRUTAL), used under the BRUTAL License v1.0. As that licence asks of
+games built with it:
+
+- the game opens on a splash screen with the BRUTAL logo (unaltered, from BRUTAL's branding) and the copyright notice above, before any
+  menu or gameplay (`Game/BrutalSplash.cs`; test scripts and screenshot runs skip it);
+- [`NOTICE.txt`](NOTICE.txt) is copied next to the game in every build (`BrutalFps.props`), so it ships with every copy.
+
+The BRUTAL logo files in `Assets/Branding/` belong to Ahwoo Limited and are included only to meet that requirement; they are not
+covered by this project's licence.
+
+Physics is [Bullet](https://github.com/bulletphysics/bullet3) (zlib licence) through BulletSharp.
+
+This project's own code is released under the MIT licence: see [LICENSE](LICENSE).

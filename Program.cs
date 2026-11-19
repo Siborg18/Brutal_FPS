@@ -65,6 +65,13 @@ Log.Write($"Log file: {Log.FilePath}");
 Log.Write($"GPU: {Renderer.DriverDescription}");
 var input = new Input(window);
 
+// The BRUTAL logo and copyright notice before anything else (Game/BrutalSplash.cs; the BRUTAL License v1.0, sections 2.1
+// and 2.2). Test scripts and screenshot runs skip it, as they skip the menu: they're not played.
+if (Environment.GetEnvironmentVariable("BRUTALFPS_SCRIPT") is not { Length: > 0 }
+    && Environment.GetEnvironmentVariable("BRUTALFPS_SHOTS") is not { Length: > 0 }
+    && Environment.GetEnvironmentVariable("BRUTALFPS_MENUSHOT") is not { Length: > 0 })
+    BrutalSplash.Run(window, renderer, input, FullscreenKey);
+
 // Day or night in each level (Game/TimeOfDay.cs), chosen before anything is loaded: the skies, shadow maps and lights
 // below are set up once for those choices. BRUTALFPS_TIME, a test script or a screenshot run skip the menu, and so does
 // starting on the firing range (BRUTALFPS_START=range): it's there to try the guns, in the daylight unless BRUTALFPS_TIME says not.

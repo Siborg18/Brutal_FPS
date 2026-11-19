@@ -96,9 +96,11 @@ public static unsafe class Texture
     }
 
     /// <summary>Uploads a prepared image (GL thread).</summary>
-    public static GlTexture Upload(Prepared image)
+    /// <param name="allowCompression">False to keep the pixels exact (no block compression), e.g. for a logo.</param>
+    public static GlTexture Upload(Prepared image, bool allowCompression = true)
     {
         var kind = image.Kind;
+        var useCompression = UseCompression && allowCompression;
         Span<GlTexture> ids = stackalloc GlTexture[1];
         GenTextures(ids);
         var texture = ids[0];
@@ -109,9 +111,9 @@ public static unsafe class Texture
 
         var (internalFormat, compressed) = kind switch
         {
-            TextureKind.Color => UseCompression ? (CompressedSrgbAlphaDxt5, true) : (GL_SRGB8_ALPHA8, false),
-            TextureKind.Normal => UseCompression ? (CompressedRgRgtc2, true) : (GL_RG8, false),
-            _ => UseCompression ? (CompressedRgbaDxt5, true) : (GL_RGBA8, false),
+            TextureKind.Color => useCompression ? (CompressedSrgbAlphaDxt5, true) : (GL_SRGB8_ALPHA8, false),
+            TextureKind.Normal => useCompression ? (CompressedRgRgtc2, true) : (GL_RG8, false),
+            _ => useCompression ? (CompressedRgbaDxt5, true) : (GL_RGBA8, false),
         };
         var format = kind == TextureKind.Normal ? GL_RG : GL_RGBA;
 
@@ -128,7 +130,7 @@ public static unsafe class Texture
                 Log.Write("[WARN] Block-compressed textures aren't supported here; using uncompressed textures.");
                 UseCompression = false;
                 DeleteTextures([texture]);
-                return Upload(image);
+                return Upload(image, allowCompression);
             }
         }
 

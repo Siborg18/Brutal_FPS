@@ -33,6 +33,9 @@ public enum ShadeMode
 
     /// <summary>A helicopter's blades as a blur, opacity per vertex (see <see cref="Renderer.DrawRotorBlur"/>).</summary>
     RotorBlur = 11,
+
+    /// <summary>A picture shown exactly as it is, with its transparency (see <see cref="Renderer.DrawImage"/>): the BRUTAL logo on the splash screen.</summary>
+    Image = 12,
 }
 
 /// <summary>
@@ -2745,6 +2748,15 @@ public sealed class Renderer : IDisposable
                 return;
             }
 
+            if (uMode == 12)
+            {
+                // A picture laid over the box's front face by its own coordinates, its colours untouched (the texture is
+                // uploaded as plain RGBA, and the window isn't an sRGB framebuffer, so its pixels arrive as they are in the file).
+                vec2 uv = (uPortalWorldToLocal * vec4(vWorldPos, 1.0)).xy + 0.5;
+                fragColor = texture(uPortalTexture, clamp(uv, vec2(0.0), vec2(1.0)));
+                return;
+            }
+
             if (uMode == 7)
             {
                 // A monitor showing a camera's feed (already tone-mapped): the texture laid over the box's front face
@@ -4552,6 +4564,24 @@ public sealed class Renderer : IDisposable
     /// screen, its +z face to the front, x to the right and y up (the picture fills that face). <paramref name="brightness"/>
     /// scales it (1 = as rendered).
     /// </summary>
+    /// <summary>
+    /// Draws <paramref name="texture"/> unaltered, blended by its alpha, over the unit square <paramref name="model"/> maps
+    /// (its +z face; the texture's bottom-left at the square's bottom-left). Call it in the overlay pass.
+    /// </summary>
+    public void DrawImage(in float4x4 model, GlTexture texture)
+    {
+        float4x4.Invert(model, out var toLocal);
+        _program.Uniform(_uPortalWorldToLocal, toLocal);
+        ActiveTexture(GL_TEXTURE0);
+        BindTexture(GL_TEXTURE_2D, texture.Id);
+        Disable(GlCapability.SampleAlphaToCoverage);
+        Enable(GlCapability.Blend);
+        BlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+        DrawCube(model, new float3(1f), ShadeMode.Image);
+        Disable(GlCapability.Blend);
+        Enable(GlCapability.SampleAlphaToCoverage);
+    }
+
     public void DrawScreen(in float4x4 model, RenderTarget feed, float brightness = 1f)
     {
         float4x4.Invert(model, out var toLocal);

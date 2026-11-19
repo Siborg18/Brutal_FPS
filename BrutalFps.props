@@ -74,6 +74,10 @@
     <None Include="$(BrutalAssets)Levels\*.json" LinkBase="Assets\Levels\" CopyToOutputDirectory="PreserveNewest" />
     <!-- Game sounds: the clips in the subfolders (Weapons, ...). The recordings at the top of Assets\Sounds are sources and stay out. -->
     <None Include="$(BrutalAssets)Sounds\*\**\*.wav" LinkBase="Assets\Sounds\" CopyToOutputDirectory="PreserveNewest" />
+    <!-- BRUTAL's logo (shown by Game/BrutalSplash.cs) and its NOTICE.txt, which the BRUTAL License v1.0 asks every copy of
+         the game to ship with (section 2.3). -->
+    <None Include="$(BrutalAssets)Branding\*.png" LinkBase="Assets\Branding\" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(MSBuildThisFileDirectory)NOTICE.txt" Link="NOTICE.txt" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>
